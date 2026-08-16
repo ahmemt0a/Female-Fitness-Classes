@@ -86,18 +86,24 @@
             background: linear-gradient(180deg, #ff5733 0%, #e64a19 100%) !important;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
+        .class-item {
+            margin-bottom: 10px;
+        }
+        .class-item:last-child {
+            margin-bottom: 0;
+        }
         .class-title {
             font-weight: 800;
             font-size: 15px;
             text-transform: uppercase;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             display: block;
             color: #ffffff;
         }
         .class-time {
             font-size: 13px;
             font-weight: 700;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             display: block;
             color: #fcd34d; /* Bright neon yellow/gold text for time tracking from the image */
         }
@@ -138,7 +144,7 @@
 <body>
 
     <div class="header">
-        <h1>Fitness & Wellness Class Schedule - July 2026</h1>
+        <h1>Fitness & Wellness Class Schedule</h1>
         <p>LADIES ONLY</p>
     </div>
 
@@ -157,56 +163,71 @@
             <!-- NAJWA -->
             <tr class="row-najwa">
                 <td class="instructor-name">Najwa</td>
-                <td>
-                    <span class="class-title">CrossHIIT</span>
-                    <span class="class-time">08:30am</span>
-                    <span class="class-location">CrossHIIT Studio</span>
-                </td>
-                <td>
-                    <span class="class-title">Cross-HIIT</span>
-                    <span class="class-time">16:30pm</span>
-                    <span class="class-location">CrossHIIT Studio</span>
-                </td>
-                <td>
-                    <span class="class-title">CrossHIIT Open</span>
-                    <span class="class-time">17:30pm</span>
-                    <span class="class-location">CrossHIIT Studio</span>
-                </td>
-                <td>
-                    <span class="class-title">Cross-HIIT</span>
-                    <span class="class-time">16:30pm</span>
-                    <span class="class-location">CrossHIIT Studio</span>
-                </td>
                 <td class="empty-cell"></td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Circuit</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
             </tr>
 
             <!-- FAJR -->
             <tr class="row-fajr">
                 <td class="instructor-name">Fajr</td>
                 <td>
-                    <span class="class-title">Total Body Circuit</span>
-                    <span class="class-time">17:15pm</span>
-                    <span class="class-location">Oasis Exercise Room</span>
+                    <div class="class-item">
+                        <span class="class-title">Spinning</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
                 </td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
                 <td>
-                    <span class="class-title">Lunch-Break Class</span>
-                    <span class="class-time">11:45am</span>
-                    <span class="class-location">Oasis Exercise Room</span>
-                </td>
-                <td>
-                    <span class="class-title">Spinning</span>
-                    <span class="class-time">08:30am</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
-                </td>
-                <td>
-                    <span class="class-title">Gym Circuit</span>
-                    <span class="class-time">11:45am</span>
-                    <span class="class-location">Oasis Gym</span>
-                </td>
-                <td>
-                    <span class="class-title">Core</span>
-                    <span class="class-time">16:15pm</span>
-                    <span class="class-location">Oasis Exercise Room</span>
+                    <div class="class-item">
+                        <span class="class-title">Circuit</span>
+                        <span class="class-time">15:30 - 16:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
                 </td>
             </tr>
 
@@ -214,101 +235,147 @@
             <tr class="row-kawther">
                 <td class="instructor-name">Kawther</td>
                 <td>
-                    <span class="class-title">Reformer Pilates</span>
-                    <span class="class-time">10:15am</span>
-                    <span class="class-time">17:30pm</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">10:15 - 11:00</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">17:30 - 18:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Reformer Pilates</span>
-                    <span class="class-time">11:45am</span>
-                    <span class="class-time">16:30pm</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Reformer Pilates</span>
-                    <span class="class-time">10:15am</span>
-                    <span class="class-time">17:00pm</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">10:15 - 11:00</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">17:00 - 17:45</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Reformer Pilates</span>
-                    <span class="class-time">09:30am</span>
-                    <span class="class-time">11:45am</span>
-                    <span class="class-time">16:00pm</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">09:30 - 10:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Reformer Pilates</span>
-                    <span class="class-time">09:30am</span>
-                    <span class="class-time">10:30am</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-time">09:30 - 10:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
                 </td>
             </tr>
 
             <!-- AFNAN -->
             <tr class="row-afnan">
                 <td class="instructor-name">Afnan</td>
-                <td class="empty-cell"></td>
                 <td>
-                    <span class="class-title">Strong by Zumba</span>
-                    <span class="class-time">17:30pm</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Total Body</span>
+                        <span class="class-time">16:00 - 16:45</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Strong by Zumba</span>
+                        <span class="class-time">17:30 - 18:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT Open</span>
+                        <span class="class-time">17:30 - 18:30</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Circuits</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
                 </td>
                 <td class="empty-cell"></td>
-                <td>
-                    <span class="class-title">Circuit</span>
-                    <span class="class-time">08:30am</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
-                </td>
-                <td>
-                    <span class="class-title">Total Body</span>
-                    <span class="class-time">11:45am</span>
-                    <span class="class-location">Oasis Gym</span>
-                </td>
             </tr>
 
             <!-- THOBEKA -->
             <tr class="row-thobeka">
                 <td class="instructor-name">Thobeka</td>
                 <td>
-                    <span class="class-title">Aqua</span>
-                    <span class="class-time">18:15pm</span>
-                    <span class="class-location">Oasis Pool</span>
+                    <div class="class-item">
+                        <span class="class-title">Stretch & Tone</span>
+                        <span class="class-time">17:00 - 17:30</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Aqua</span>
+                        <span class="class-time">18:15 - 19:00</span>
+                        <span class="class-location">Oasis Pool</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Total Body</span>
-                    <span class="class-time">08:30am</span>
-                    <span class="class-location">Ain Nakhl Bldg.</span>
+                    <div class="class-item">
+                        <span class="class-title">Total Body</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Aqua</span>
-                    <span class="class-time">09:30am</span>
-                    <span class="class-location">Oasis Pool</span>
+                    <div class="class-item">
+                        <span class="class-title">Boxfit</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Aqua</span>
+                        <span class="class-time">18:15 - 19:00</span>
+                        <span class="class-location">Oasis Pool</span>
+                    </div>
                 </td>
                 <td>
-                    <span class="class-title">Aqua</span>
-                    <span class="class-time">18:15pm</span>
-                    <span class="class-location">Oasis Pool</span>
+                    <div class="class-item">
+                        <span class="class-title">Resistance & Strength</span>
+                        <span class="class-time">16:00 - 16:45</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
                 </td>
-                <td>
-                    <span class="class-title">Box-Fit</span>
-                    <span class="class-time">08:30am</span>
-                    <span class="class-location">CrossHIIT Studio</span>
-                </td>
-            </tr>
-
-            <!-- LAYLA -->
-            <tr class="row-layla">
-                <td class="instructor-name">Layla</td>
-                <td>
-                    <span class="class-title">Gym Circuit</span>
-                    <span class="class-time">11:15am</span>
-                    <span class="class-location">Oasis Gym</span>
-                </td>
-                <td class="empty-cell"></td>
-                <td class="empty-cell"></td>
-                <td class="empty-cell"></td>
                 <td class="empty-cell"></td>
             </tr>
         </tbody>
