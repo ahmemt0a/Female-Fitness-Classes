@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Female Fitness & Wellness Class Schedule</title>
+    <title>Female Fitness & Wellness Class Schedule (Sep 16 - Oct 15, 2026)</title>
     <style>
         * {
             box-sizing: border-box;
@@ -10,11 +10,11 @@
             padding: 0;
         }
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, 'segoe UI', sans-serif;
             background: linear-gradient(135deg, #0b111e 0%, #070a12 100%);
             color: #ffffff;
-            width: 1080px;
-            height: 1920px; /* 20" x 36" Display Screen Proportions */
+            width: 1000px;
+            height: 1800px; /* 20" x 36" Display Screen Proportions */
             padding: 40px;
             display: flex;
             flex-direction: column;
@@ -23,22 +23,22 @@
             background: transparent;
             color: #ffffff;
             text-align: center;
-            padding: 35px;
+            padding: 25px 35px 20px 35px;
             border-radius: 12px 12px 0 0;
         }
         .header h1 {
             font-size: 36px;
             letter-spacing: .5px;
             text-transform: uppercase;
-            margin-bottom: 10px;
-            font-weight: 800;
-            background: linear-gradient(to right, #ff6b4a, #fcd34d, #2dd4bf);
+            margin-bottom: 8px;
+            font-weight: 7500;
+            background: linear-gradient(45deg, #84BD00 10%, #00A3E0 90%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .header p {
             font-size: 20px;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
             color: #00f2fe;
             font-weight: 700;
             text-transform: uppercase;
@@ -49,15 +49,15 @@
             border-spacing: 8px;
             table-layout: fixed;
             flex-grow: 1;
-            margin-top: 15px;
+            margin-top: 5px;
         }
         th {
             background-color: #162235;
             color: #00f2fe;
-            font-size: 18px;
+            font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 1.5px;
-            padding: 20px 10px;
+            padding: 18px 10px;
             border-radius: 6px;
             border: 1px solid rgba(0, 242, 254, 0.3);
             box-shadow: inset 0 0 10px rgba(0, 242, 254, 0.05);
@@ -68,69 +68,73 @@
             border-color: #2d3748;
         }
         td {
-            padding: 15px 10px;
+            padding: 6px 4px;
             vertical-align: middle;
             text-align: center;
             border-radius: 8px;
-            font-size: 14px;
-            line-height: 1.5;
+            font-size: 13px;
+            line-height: 1.2;
             background-color: #111a2e;
             border: 1px solid #1e2d4a;
         }
         .instructor-name {
             font-weight: 900;
-            font-size: 18px;
+            font-size: 16px;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: #ffffff;
-            background: linear-gradient(180deg, #ff5733 0%, #e64a19 100%) !important;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
+        
+        /* Distinct Highlight Colors for Each Trainer */
+        .row-najwa .instructor-name { background: linear-gradient(135deg, #14b8a6 0%, #26A8AB 100%) !important; }
+        .row-najwa td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #2dd4bf; text-align: left; padding-left: 10px; background-color: #132238; }
+        
+        .row-kawther .instructor-name { background: linear-gradient(135deg, #f59e0b 0%, #FFC846 100%) !important; }
+        .row-kawther td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #fbbf24; text-align: left; padding-left: 10px; background-color: #132238; }
+        
+        .row-afnan .instructor-name { background: linear-gradient(135deg, #ef4444 0%, #F05F41 100%) !important; }
+        .row-afnan td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #ff6b4a; text-align: left; padding-left: 10px; background-color: #132238; }
+        
+        .row-thobeka .instructor-name { background: linear-gradient(135deg, #3b82f6 0%, #00A3E0 100%) !important; }
+        .row-thobeka td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #3b82f6; text-align: left; padding-left: 10px; background-color: #132238; }
+
+        .row-fajr .instructor-name { background: linear-gradient(135deg, #8b5cf6 0%, #643278 100%) !important; }
+        .row-fajr td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #a78bfa; text-align: left; padding-left: 10px; background-color: #132238; }
+
         .class-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
         }
         .class-item:last-child {
             margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
         }
         .class-title {
             font-weight: 800;
-            font-size: 15px;
+            font-size: 13px;
             text-transform: uppercase;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
             display: block;
             color: #ffffff;
         }
         .class-time {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 700;
             margin-bottom: 2px;
             display: block;
-            color: #fcd34d; /* Bright neon yellow/gold text for time tracking from the image */
+            color: #fcd34d;
         }
         .class-location {
-            font-size: 11px;
+            font-size: 12px;
             font-weight: bold;
-            text-transform: uppercase;
+            text-transform: Capitalize each word;
             letter-spacing: 0.5px;
             display: block;
             color: #94a3b8;
         }
-        
-        /* Vibrant side borders acting as the color badge accenting from the reference layout */
-        .row-najwa { border-left: 6px solid #2dd4bf; }
-        .row-najwa td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #2dd4bf; text-align: left; padding-left: 15px; background-color: #17243c; }
-        
-        .row-kawther { border-left: 6px solid #fbbf24; }
-        .row-kawther td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #fbbf24; text-align: left; padding-left: 15px; background-color: #17243c; }
-        
-        .row-afnan { border-left: 6px solid #ff6b4a; }
-        .row-afnan td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #ff6b4a; text-align: left; padding-left: 15px; background-color: #17243c; }
-        
-        .row-thobeka { border-left: 6px solid #3b82f6; }
-        .row-thobeka td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #3b82f6; text-align: left; padding-left: 15px; background-color: #17243c; }
-
-        .row-fajr { border-left: 6px solid #a78bfa; }
-        .row-fajr td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #a78bfa; text-align: left; padding-left: 15px; background-color: #17243c; }
 
         .empty-cell { 
             background-color: rgba(22, 34, 53, 0.2) !important; 
@@ -141,53 +145,25 @@
 <body>
 
     <div class="header">
-        <h1>Fitness & Wellness Class Schedule</h1>
-        <td>
+        <h1>Fitness & Wellness Classes Schedule</h1>
         <p>LADIES ONLY</p>
     </div>
 
     <table>
         <thead>
             <tr>
-                <th style="width: 16%;">TRAINER</th>
-                <th style="width: 16.8%;">Sunday</th>
-                <th style="width: 16.8%;">Monday</th>
-                <th style="width: 16.8%;">Tuesday</th>
-                <th style="width: 16.8%;">Wednesday</th>
-                <th style="width: 16.8%;">Thursday</th>
+                <th style="width: 15%;">TRAINER</th>
+                <th style="width: 17%;">Sunday</th>
+                <th style="width: 17%;">Monday</th>
+                <th style="width: 17%;">Tuesday</th>
+                <th style="width: 17%;">Wednesday</th>
+                <th style="width: 17%;">Thursday</th>
             </tr>
         </thead>
         <tbody>
-            <!-- NAJWA -->
+            <!-- NAJWA (Teal Theme) -->
             <tr class="row-najwa">
                 <td class="instructor-name">Najwa</td>
-                <td class="empty-cell"></td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">Cross-HIIT</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">Circuit</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">Lunch Break Class</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">Cross-HIIT</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
-                    </div>
-                </td>
                 <td>
                     <div class="class-item">
                         <span class="class-title">Cross-HIIT</span>
@@ -195,74 +171,106 @@
                         <span class="class-location">Oasis Cross-HIIT Studio</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-title">Functional Fit (Full-body)</span>
                         <span class="class-time">11:45 - 12:15</span>
                         <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Core</span>
+                        <span class="class-time">18:30 - 19:00</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT Open</span>
+                        <span class="class-time">17:30 - 18:30</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class (Upper-Body)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                    </div>
+                </td>
+                <td class="empty-cell"></td>
             </tr>
 
-            <!-- KAWTHER -->
+            <!-- KAWTHER (Amber/Gold Theme) -->
             <tr class="row-kawther">
                 <td class="instructor-name">Kawther</td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Int/Adv)</span>
                         <span class="class-time">10:15 - 11:00</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Int/Adv)</span>
                         <span class="class-time">17:30 - 18:15</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Int/Adv)</span>
                         <span class="class-time">11:45 - 12:15</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Beginners)</span>
                         <span class="class-time">16:30 - 17:15</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Int/Adv)</span>
                         <span class="class-time">10:15 - 11:00</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Int/Adv)</span>
                         <span class="class-time">17:00 - 17:45</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Int/Adv)</span>
                         <span class="class-time">09:30 - 10:15</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Beginners)</span>
                         <span class="class-time">11:45 - 12:15</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Reformer Pilates</span>
+                        <span class="class-title">Reformer Pilates (Beginners)</span>
                         <span class="class-time">09:30 - 10:15</span>
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                 </td>
             </tr>
 
-            <!-- AFNAN -->
+            <!-- AFNAN (Red/Coral Theme) -->
             <tr class="row-afnan">
                 <td class="instructor-name">Afnan</td>
                 <td>
@@ -274,39 +282,40 @@
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Lunch Break Class</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                    <div class="class-item">
                         <span class="class-title">Strong by Zumba</span>
                         <span class="class-time">17:30 - 18:15</span>
-                        <span class="class-location">Ain Nakhl</span>
+                        <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-title">Functional Fit (Cardio)</span>
                         <span class="class-time">11:45 - 12:15</span>
                         <span class="class-location">Oasis Exercise Room</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Cross-HIIT Open</span>
-                        <span class="class-time">17:30 - 18:30</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                        <span class="class-title">Lower-Body Fusion</span>
+                        <span class="class-time">18:00 - 18:45</span>
+                        <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Circuits</span>
+                        <span class="class-title">Strong by Zumba</span>
                         <span class="class-time">08:30 - 09:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                        <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
-                <td class="empty-cell"></td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Lunch Break Class (Full-body)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
             </tr>
 
-            <!-- THOBEKA -->
+            <!-- THOBEKA (Blue Theme) -->
             <tr class="row-thobeka">
                 <td class="instructor-name">Thobeka</td>
                 <td>
@@ -321,6 +330,7 @@
                         <span class="class-location">Oasis Pool</span>
                     </div>
                 </td>
+                <td class="empty-cell"></td>
                 <td>
                     <div class="class-item">
                         <span class="class-title">Total Body</span>
@@ -330,11 +340,6 @@
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Boxfit</span>
-                        <span class="class-time">08:30 - 09:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
-                    </div>
-                    <div class="class-item">
                         <span class="class-title">Aqua Fit</span>
                         <span class="class-time">18:15 - 19:00</span>
                         <span class="class-location">Oasis Pool</span>
@@ -342,17 +347,17 @@
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">Resistance & Strength</span>
-                        <span class="class-time">16:00 - 16:45</span>
-                        <span class="class-location">Oasis Exercise Room</span>
+                        <span class="class-title">Box Fit</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Oasis Cross-HIIT Studio</span>
                     </div>
                 </td>
-                <td class="empty-cell"></td>
             </tr>
 
-            <!-- FAJR -->
+            <!-- FAJR (Purple Theme) -->
             <tr class="row-fajr">
                 <td class="instructor-name">Fajr</td>
+                <td class="empty-cell"></td>
                 <td>
                     <div class="class-item">
                         <span class="class-title">Spinning</span>
@@ -360,14 +365,25 @@
                         <span class="class-location">Ain Nakhl</span>
                     </div>
                     <div class="class-item">
-                        <span class="class-title">Lunch Break Class</span>
+                        <span class="class-title">Functional Fit (Lower-body)</span>
                         <span class="class-time">11:45 - 12:15</span>
                         <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
-                <td class="empty-cell"></td>
-                <td class="empty-cell"></td>
-                <td class="empty-cell"></td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Circuit</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Upper-Body Fusion</span>
+                        <span class="class-time">17:15 - 18:00</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
                 <td>
                     <div class="class-item">
                         <span class="class-title">Circuit</span>
@@ -378,5 +394,6 @@
             </tr>
         </tbody>
     </table>
+
 </body>
 </html>
