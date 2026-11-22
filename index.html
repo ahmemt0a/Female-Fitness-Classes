@@ -85,27 +85,7 @@
             color: #ffffff;
             background: linear-gradient(180deg, #ff5733 0%, #e64a19 100%) !important;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-	 }
-        
-        /* Distinct Highlight Colors for Each Trainer */
-        .row-najwa .instructor-name { background: linear-gradient(135deg, #14b8a6 0%, #26A8AB 100%) !important; }
-        .row-najwa td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #2dd4bf; text-align: left; padding-left: 10px; background-color: #132238; }
-        
-        .row-kawther .instructor-name { background: linear-gradient(135deg, #f59e0b 0%, #FFC846 100%) !important; }
-        .row-kawther td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #fbbf24; text-align: left; padding-left: 10px; background-color: #132238; }
-        
-        .row-afnan .instructor-name { background: linear-gradient(135deg, #ef4444 0%, #F05F41 100%) !important; }
-        .row-afnan td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #ff6b4a; text-align: left; padding-left: 10px; background-color: #132238; }
-        
-        .row-thobeka .instructor-name { background: linear-gradient(135deg, #3b82f6 0%, #00A3E0 100%) !important; }
-        .row-thobeka td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #3b82f6; text-align: left; padding-left: 10px; background-color: #132238; }
-
-        .row-fajr .instructor-name { background: linear-gradient(135deg, #8b5cf6 0%, #643278 100%) !important; }
-        .row-fajr td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #a78bfa; text-align: left; padding-left: 10px; background-color: #132238; }
-
-        .row-layla .instructor-name { background: linear-gradient(135deg, #ef4444 0%, #F05F41 100%) !important; }
-        .row-layla td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #ff6b4a; text-align: left; padding-left: 10px; background-color: #132238; }
-
+        }
         .class-item {
             margin-bottom: 10px;
         }
@@ -115,6 +95,7 @@
         .class-title {
             font-weight: 800;
             font-size: 15px;
+            text-transform: uppercase;
             margin-bottom: 4px;
             display: block;
             color: #ffffff;
@@ -139,20 +120,14 @@
         .row-najwa { border-left: 6px solid #2dd4bf; }
         .row-najwa td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #2dd4bf; text-align: left; padding-left: 15px; background-color: #17243c; }
         
-        .row-kawther { border-left: 6px solid #fbbf24; }
-        .row-kawther td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #fbbf24; text-align: left; padding-left: 15px; background-color: #17243c; }
+        .row-fajr { border-left: 6px solid #a78bfa; }
+        .row-fajr td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #a78bfa; text-align: left; padding-left: 15px; background-color: #17243c; }
         
         .row-afnan { border-left: 6px solid #ff6b4a; }
         .row-afnan td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #ff6b4a; text-align: left; padding-left: 15px; background-color: #17243c; }
         
         .row-thobeka { border-left: 6px solid #3b82f6; }
         .row-thobeka td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #3b82f6; text-align: left; padding-left: 15px; background-color: #17243c; }
-
-        .row-fajr { border-left: 6px solid #a78bfa; }
-        .row-fajr td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #a78bfa; text-align: left; padding-left: 15px; background-color: #17243c; }
-
-        .row-layla { border-left: 6px solid #06b6d4; }
-        .row-layla td:not(.instructor-name):not(.empty-cell) { border-left: 4px solid #06b6d4; text-align: left; padding-left: 15px; background-color: #17243c; }
 
         .empty-cell { 
             background-color: rgba(22, 34, 53, 0.2) !important; 
@@ -179,225 +154,174 @@
             </tr>
         </thead>
         <tbody>
-            <!-- NAJWA (Teal Theme) -->
+            <!-- NAJWA -->
             <tr class="row-najwa">
                 <td class="instructor-name">Najwa</td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">CROSS-HIIT</span>
+                        <span class="class-title">Cross-HIIT</span>
                         <span class="class-time">08:30 - 09:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">FUNCTIONAL FIT (Full-Body)</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
+                        <span class="class-location">Oasis Fitness Studio</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">CROSS-HIIT</span>
+                        <span class="class-title">Cross-HIIT</span>
                         <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                        <span class="class-location">Oasis Fitness Studio</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">CROSS-HIIT Open</span>
-                        <span class="class-time">17:30 - 18:30</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">CROSS-HIIT</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">FUNCTIONAL FIT (Full-Body)</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                </td>
-            </tr>
-
-            <!-- KAWTHER (Amber/Gold Theme) -->
-            <tr class="row-kawther">
-                <td class="instructor-name">Kawther</td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Int./Adv.)</span>
-                        <span class="class-time">10:15 - 11:00</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Int./Adv.)</span>
-                        <span class="class-time">17:00 - 17:45</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Int./Adv.)</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Beg.)</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Int./Adv.)</span>
-                        <span class="class-time">10:15 - 11:00</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Int./Adv.)</span>
-                        <span class="class-time">17:00 - 17:45</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Int./Adv.)</span>
-                        <span class="class-time">09:30 - 10:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Beg.)</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">REFORMER PILATES (Beg.)</span>
-                        <span class="class-time">09:30 - 10:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-            </tr>
-
-            <!-- AFNAN (Red/Coral Theme) -->
-            <tr class="row-afnan">
-                <td class="instructor-name">Afnan</td>
-                <td class="empty-cell"></td>
-                <td class="empty-cell"></td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">FUNCTIONAL FIT (Cardio)</span>
-                        <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">CORE</span>
-                        <span class="class-time">18:00 - 18:30</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">STEP & TONE</span>
-                        <span class="class-time">08:30 - 09:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">CIRCUIT</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                </td>
-            </tr>
-
-            <!-- THOBEKA (Blue Theme) -->
-            <tr class="row-thobeka">
-                <td class="instructor-name">Thobeka</td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">TOTAL BODY</span>
-                        <span class="class-time">16:30 - 17:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">BOX-FIT</span>
+                        <span class="class-title">Core</span>
                         <span class="class-time">17:30 - 18:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Functional Fit (Upper-Body)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Cross-HIIT</span>
+                        <span class="class-time">16:30 - 17:15</span>
                         <span class="class-location">Oasis Cross-HIIT Studio</span>
                     </div>
                 </td>
-                <td class="empty-cell"></td>
-                <td class="empty-cell"></td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">BOX-FIT</span>
-                        <span class="class-time">08:30 - 09:15</span>
-                        <span class="class-location">Oasis Cross-HIIT Studio</span>
+                        <span class="class-title">Functional Fit (Full-Body)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Circuit</span>
+                        <span class="class-time">15:15 - 16:00</span>
+                        <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
             </tr>
 
-            <!-- FAJR (Purple Theme) -->
+            <!-- FAJR -->
             <tr class="row-fajr">
                 <td class="instructor-name">Fajr</td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">SPINNING</span>
-                        <span class="class-time">18:00 - 18:45</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                </td>
-                <td>
-                    <div class="class-item">
-                        <span class="class-title">SPINNING</span>
-                        <span class="class-time">08:30 - 09:15</span>
-                        <span class="class-location">Ain Nakhl Complex</span>
-                    </div>
-                    <div class="class-item">
-                        <span class="class-title">FUNCTIONAL FIT (Lower-Body)</span>
+                        <span class="class-title">Functional Fit (Full-Body)</span>
                         <span class="class-time">11:45 - 12:15</span>
                         <span class="class-location">Oasis Exercise Room</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">CIRCUIT</span>
+                        <span class="class-title">Spinning</span>
                         <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Functional Fit (Lower-Body)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Tabata & Core</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Functional Fit (Cardio)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td class="empty-cell"></td>
+                <td class="empty-cell"></td>
+            </tr>
+
+            <!-- AFNAN -->
+            <tr class="row-afnan">
+                <td class="instructor-name">Afnan</td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates (Intermediate)</span>
+                        <span class="class-time">10:15 - 11:00</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates (Beginners)</span>
+                        <span class="class-time">17:00 - 17:45</span>
                         <span class="class-location">Ain Nakhl Complex</span>
                     </div>
                 </td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">FUNCTIONAL FIT (Upper-Body)</span>
+                        <span class="class-title">Reformer Pilates (All Levels)</span>
                         <span class="class-time">11:45 - 12:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates (Intermediate)</span>
+                        <span class="class-time">16:30 - 17:15</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates (Beginners)</span>
+                        <span class="class-time">17:00 - 17:45</span>
+                        <span class="class-location">Ain Nakhl</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Step & Tone</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Reformer Pilates (All Levels)</span>
+                        <span class="class-time">11:45 - 12:15</span>
+                        <span class="class-location">Ain Nakhl Complex</span>
                     </div>
                 </td>
                 <td class="empty-cell"></td>
             </tr>
 
-            <!-- LAYLA (Red/Coral Theme) -->
-            <tr class="row-layla">
-                <td class="instructor-name">Layla</td>
-                <td class="empty-cell"></td>
+            <!-- THOBEKA -->
+            <tr class="row-thobeka">
+                <td class="instructor-name">Thobeka</td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Stretching</span>
+                        <span class="class-time">16:30 - 17:00</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                    <div class="class-item">
+                        <span class="class-title">Total Body</span>
+                        <span class="class-time">18:00 - 18:45</span>
+                        <span class="class-location">Oasis Exercise Room</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="class-item">
+                        <span class="class-title">Box Fit</span>
+                        <span class="class-time">17:30 - 18:15</span>
+                        <span class="class-location">Oasis Fitness Studio</span>
+                    </div>
+                </td>
                 <td class="empty-cell"></td>
                 <td class="empty-cell"></td>
                 <td>
                     <div class="class-item">
-                        <span class="class-title">CIRCUIT</span>
-                        <span class="class-time">17:30 - 18:15</span>
-                        <span class="class-location">Oasis Exercise Room</span>
+                        <span class="class-title">Box-Fit</span>
+                        <span class="class-time">08:30 - 09:15</span>
+                        <span class="class-location">Oasis Fitness Studio</span>
                     </div>
                 </td>
-                <td class="empty-cell"></td>
             </tr>
         </tbody>
     </table>
